@@ -16,26 +16,7 @@ prioritised, applied to any brief.
 ## Quickstart
 
 ```bash
-npm install                 # once: puppeteer-core, used by tests/inspection only
-node pinterest-ui-engine/engine/run.mjs examples/fern-and-co
-# → examples/fern-and-co/app/index.html   (open it, or serve the folder)
-```
-
-Generation itself needs **no browser and no network**. To run the
-test suites and inspection tools you also need a Chromium/Chrome
-binary; point the engine at it with `CHROME_PATH=/path/to/chrome`
-(see INTEGRATION.md §Environment).
-
-## Make your own app
-
-**Starting with a person, not a pipeline? Begin with `INTAKE.md`.**
-The engine interviews the user first (questions in
-`intake-questions.json`), drafts the brief from their answers, and
-checks it with the brief doctor — because its best screens are
-declared, never derived, and a brief written straight from a one-line
-prompt silently omits them.
-
-1. Create a folder, e.g. `cases/my-shop/`.
+npm install                 # once: puppeteer-core, used by tests/inspection 
 2. Write `product-brief.json` in it (contract: INTEGRATION.md §Input).
 3. Optional: drop photos in `cases/my-shop/assets/` and reference
    them from the brief (`"image": "assets/dish.jpg"`).
